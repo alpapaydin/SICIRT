@@ -1,0 +1,19 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.TTToolbox.cpp.obj": [
+			"IKRig_ConstraintBones.cpp.obj",
+			"TTCopyAllCurvesAnimModifier.cpp.obj",
+			"TTPoseableMeshComponent.cpp.obj",
+			"TTToolbox.cpp.obj",
+			"TTToolboxBlueprintLibrary.cpp.obj"
+		],
+		"Module.TTToolbox.gen.cpp.obj": [
+			"IKRig_ConstraintBones.gen.cpp.obj",
+			"TTCopyAllCurvesAnimModifier.gen.cpp.obj",
+			"TTPoseableMeshComponent.gen.cpp.obj",
+			"TTToolbox.init.gen.cpp.obj",
+			"TTToolboxBlueprintLibrary.gen.cpp.obj"
+		]
+	}
+}
