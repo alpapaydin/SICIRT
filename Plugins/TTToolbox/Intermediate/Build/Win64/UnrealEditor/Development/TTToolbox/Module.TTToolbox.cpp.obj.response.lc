@@ -1,6 +1,6 @@
-C:\Users\cagri\Documents\GitHub\SICIRT\Plugins\TTToolbox\Intermediate\Build\Win64\UnrealEditor\Development\TTToolbox\Module.TTToolbox.cpp
+"C:\Users\User\Documents\Unreal Projects\SICIRT\Plugins\TTToolbox\Intermediate\Build\Win64\UnrealEditor\Development\TTToolbox\Module.TTToolbox.cpp"
 /I .
-/I C:\Users\cagri\Documents\GitHub\SICIRT\Plugins\TTToolbox\Source\TTToolbox\Private
+/I "C:\Users\User\Documents\Unreal Projects\SICIRT\Plugins\TTToolbox\Source\TTToolbox\Private"
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject
 /I Runtime
 /I Runtime\CoreUObject\Public
@@ -255,9 +255,9 @@ C:\Users\cagri\Documents\GitHub\SICIRT\Plugins\TTToolbox\Intermediate\Build\Win6
 /I ..\Plugins\Animation\IKRig\Intermediate\Build\Win64\UnrealEditor\Inc\IKRigEditor
 /I ..\Plugins\Animation\IKRig\Source
 /I ..\Plugins\Animation\IKRig\Source\IKRigEditor\Public
-/I C:\Users\cagri\Documents\GitHub\SICIRT\Plugins\TTToolbox\Intermediate\Build\Win64\UnrealEditor\Inc\TTToolbox
-/I C:\Users\cagri\Documents\GitHub\SICIRT\Plugins\TTToolbox\Source
-/I C:\Users\cagri\Documents\GitHub\SICIRT\Plugins\TTToolbox\Source\TTToolbox\Public
+/I "C:\Users\User\Documents\Unreal Projects\SICIRT\Plugins\TTToolbox\Intermediate\Build\Win64\UnrealEditor\Inc\TTToolbox"
+/I "C:\Users\User\Documents\Unreal Projects\SICIRT\Plugins\TTToolbox\Source"
+/I "C:\Users\User\Documents\Unreal Projects\SICIRT\Plugins\TTToolbox\Source\TTToolbox\Public"
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationModifiers
 /I Editor\AnimationModifiers\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationBlueprintLibrary
@@ -299,18 +299,18 @@ C:\Users\cagri\Documents\GitHub\SICIRT\Plugins\TTToolbox\Intermediate\Build\Win6
 /I ThirdParty\PhysX3\PhysX_3.4\Include\common
 /I ThirdParty\PhysX3\PhysX_3.4\Include\extensions
 /I ThirdParty\PhysX3\PhysX_3.4\Include\geometry
-/I "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\INCLUDE"
+/I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
-/FI"C:\Users\cagri\Documents\GitHub\SICIRT\Intermediate\Build\Win64\SICIRTEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/FI"C:\Users\cagri\Documents\GitHub\SICIRT\Plugins\TTToolbox\Intermediate\Build\Win64\UnrealEditor\Development\TTToolbox\Definitions.TTToolbox.h"
-/Yu"C:\Users\cagri\Documents\GitHub\SICIRT\Intermediate\Build\Win64\SICIRTEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"C:\Users\cagri\Documents\GitHub\SICIRT\Intermediate\Build\Win64\SICIRTEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-/Fo"C:\Users\cagri\Documents\GitHub\SICIRT\Plugins\TTToolbox\Intermediate\Build\Win64\UnrealEditor\Development\TTToolbox\Module.TTToolbox.cpp.obj"
-/sourceDependencies C:\Users\cagri\Documents\GitHub\SICIRT\Plugins\TTToolbox\Intermediate\Build\Win64\UnrealEditor\Development\TTToolbox\Module.TTToolbox.cpp.json
+/FI"C:\Users\User\Documents\Unreal Projects\SICIRT\Intermediate\Build\Win64\SICIRTEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/FI"C:\Users\User\Documents\Unreal Projects\SICIRT\Plugins\TTToolbox\Intermediate\Build\Win64\UnrealEditor\Development\TTToolbox\Definitions.TTToolbox.h"
+/Yu"C:\Users\User\Documents\Unreal Projects\SICIRT\Intermediate\Build\Win64\SICIRTEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"C:\Users\User\Documents\Unreal Projects\SICIRT\Intermediate\Build\Win64\SICIRTEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+/Fo"C:\Users\User\Documents\Unreal Projects\SICIRT\Plugins\TTToolbox\Intermediate\Build\Win64\UnrealEditor\Development\TTToolbox\Module.TTToolbox.cpp.lc.obj"
+/sourceDependencies"C:\Users\User\Documents\Unreal Projects\SICIRT\Plugins\TTToolbox\Intermediate\Build\Win64\UnrealEditor\Development\TTToolbox\Module.TTToolbox.cpp.lc.json"
 /Zc:inline
 /nologo
 /Oi

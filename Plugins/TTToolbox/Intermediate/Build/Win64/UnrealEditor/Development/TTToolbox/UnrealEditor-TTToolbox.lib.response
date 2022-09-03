@@ -6,8 +6,8 @@
 /NAME:"UnrealEditor-TTToolbox.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"C:\Users\cagri\Documents\GitHub\SICIRT\Intermediate\Build\Win64\SICIRTEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
-"C:\Users\cagri\Documents\GitHub\SICIRT\Plugins\TTToolbox\Intermediate\Build\Win64\UnrealEditor\Development\TTToolbox\Module.TTToolbox.cpp.obj"
-"C:\Users\cagri\Documents\GitHub\SICIRT\Plugins\TTToolbox\Intermediate\Build\Win64\UnrealEditor\Development\TTToolbox\Module.TTToolbox.gen.cpp.obj"
-"C:\Users\cagri\Documents\GitHub\SICIRT\Plugins\TTToolbox\Intermediate\Build\Win64\UnrealEditor\Development\TTToolbox\Default.rc2.res"
-/OUT:"C:\Users\cagri\Documents\GitHub\SICIRT\Plugins\TTToolbox\Intermediate\Build\Win64\UnrealEditor\Development\TTToolbox\UnrealEditor-TTToolbox.lib"
+"C:\Users\User\Documents\Unreal Projects\SICIRT\Intermediate\Build\Win64\SICIRTEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\User\Documents\Unreal Projects\SICIRT\Plugins\TTToolbox\Intermediate\Build\Win64\UnrealEditor\Development\TTToolbox\Module.TTToolbox.cpp.obj"
+"C:\Users\User\Documents\Unreal Projects\SICIRT\Plugins\TTToolbox\Intermediate\Build\Win64\UnrealEditor\Development\TTToolbox\Module.TTToolbox.gen.cpp.obj"
+"C:\Users\User\Documents\Unreal Projects\SICIRT\Plugins\TTToolbox\Intermediate\Build\Win64\UnrealEditor\Development\TTToolbox\Default.rc2.res"
+/OUT:"C:\Users\User\Documents\Unreal Projects\SICIRT\Plugins\TTToolbox\Intermediate\Build\Win64\UnrealEditor\Development\TTToolbox\UnrealEditor-TTToolbox.lib"
