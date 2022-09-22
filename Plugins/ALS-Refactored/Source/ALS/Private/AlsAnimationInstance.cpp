@@ -46,7 +46,7 @@ void UAlsAnimationInstance::NativeBeginPlay()
 		// Teleportation of simulated proxies is done in a different way.
 
 		Character->GetCapsuleComponent()->TransformUpdated.AddWeakLambda(
-			this, [&bTeleported = bTeleported](USceneComponent*, const EUpdateTransformFlags, const ETeleportType TeleportType)
+			this, [this](USceneComponent*, const EUpdateTransformFlags, const ETeleportType TeleportType)
 			{
 				bTeleported |= TeleportType != ETeleportType::None;
 			});
@@ -67,9 +67,11 @@ void UAlsAnimationInstance::NativeUpdateAnimation(const float DeltaTime)
 
 	if (GetSkelMeshComponent()->IsUsingAbsoluteRotation())
 	{
+		const auto& ActorTransform{Character->GetActorTransform()};
+
 		// Manually synchronize mesh rotation with character rotation.
 
-		GetSkelMeshComponent()->SetWorldRotation(Character->GetActorQuat() * Character->GetBaseRotationOffset());
+		GetSkelMeshComponent()->SetWorldRotation(ActorTransform.GetRotation() * Character->GetBaseRotationOffset());
 
 		// Re-cache transforms because the skeletal mesh transform has changed before.
 
@@ -77,7 +79,7 @@ void UAlsAnimationInstance::NativeUpdateAnimation(const float DeltaTime)
 
 		const_cast<FTransform&>(Proxy.GetComponentTransform()) = GetSkelMeshComponent()->GetComponentTransform();
 		const_cast<FTransform&>(Proxy.GetComponentRelativeTransform()) = GetSkelMeshComponent()->GetRelativeTransform();
-		const_cast<FTransform&>(Proxy.GetActorTransform()) = Character->GetActorTransform();
+		const_cast<FTransform&>(Proxy.GetActorTransform()) = ActorTransform;
 	}
 
 	bTeleported |= Character->IsSimulatedProxyTeleported();
@@ -322,8 +324,10 @@ void UAlsAnimationInstance::RefreshLookTowardsInput(const float DeltaTime)
 		return;
 	}
 
+	// Block look towards the input direction when the character is in the air to prevent head rotation "snap" when changing look sides.
+
 	const auto TargetYawAngle{
-		FRotator3f::NormalizeAxis((LocomotionState.bHasInput
+		FRotator3f::NormalizeAxis((LocomotionState.bHasInput && LocomotionMode != AlsLocomotionModeTags::InAir
 			                           ? LocomotionState.InputYawAngle
 			                           : LocomotionState.TargetYawAngle) - CharacterYawAngle)
 	};
@@ -974,7 +978,8 @@ void UAlsAnimationInstance::ProcessFootLockTeleport(FAlsFootState& FootState) co
 
 void UAlsAnimationInstance::ProcessFootLockBaseChange(FAlsFootState& FootState, const FTransform& ComponentTransformInverse) const
 {
-	if (!bPendingUpdate && !LocomotionState.BasedMovement.bBaseChanged ||
+	// ReSharper disable once CppRedundantParentheses
+	if ((!bPendingUpdate && !LocomotionState.BasedMovement.bBaseChanged) ||
 	    !FAnimWeight::IsRelevant(FootState.IkAmount * FootState.LockAmount))
 	{
 		return;
